@@ -243,10 +243,8 @@ function Project({ title, description, tech, link, image, gradient }) {
       <div className="md:flex">
         {/* Project Image */}
         <div className="md:w-2/5 relative h-64 md:h-auto overflow-hidden">
-          <div className={`absolute inset-0 bg-gradient-to-br ${gradient} flex items-center justify-center`}>
-            <div className="text-white text-6xl opacity-50">📱</div>
-            {/* Uncomment when you add project images:
-            <Image src={image} alt={title} fill className="object-cover" /> */}
+          <div className={`absolute inset-0 bg-gradient-to-br ${gradient}`}>
+            <Image src={image} alt={title} fill className="object-cover" />
           </div>
           <div className={`absolute inset-0 bg-gradient-to-t from-black/50 to-transparent transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`} />
         </div>
